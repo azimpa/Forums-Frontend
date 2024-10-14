@@ -1,0 +1,54 @@
+/* src/components/ResponseForm.css */
+.response-form {
+  margin-top: 30px; /* Increased top margin for better separation */
+  border-top: 2px solid #ddd; /* Slightly thicker border for prominence */
+  padding-top: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners for a softer appearance */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.response-form h3 {
+  color: #2c3e50; /* Darker color for the heading */
+  margin-bottom: 15px; /* Increased bottom margin for clarity */
+  font-size: 1.8em; /* Slightly larger font size */
+}
+
+.response-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for better spacing between elements */
+}
+
+.response-form textarea {
+  width: 100%;
+  height: 120px; /* Increased height for better usability */
+  padding: 12px; /* Increased padding for comfort */
+  border: 1px solid #ccc; /* Softer border color */
+  border-radius: 5px; /* Slightly larger border-radius */
+  resize: vertical; /* Allow vertical resizing only */
+  font-size: 1em; /* Increased font size for readability */
+  color: #333; /* Darker text color for better contrast */
+}
+
+.response-form button {
+  align-self: flex-start;
+  padding: 10px 20px; /* Increased padding for a more substantial button */
+  background-color: #007bff; /* Bootstrap primary color for consistency */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Increased border-radius for a modern look */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.response-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Elevation effect on hover */
+}
+
+.response-form button:disabled {
+  background-color: #cccccc; /* Light gray for disabled state */
+  cursor: not-allowed;
+}

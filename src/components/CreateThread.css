@@ -1,0 +1,108 @@
+.create-thread {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-thread h1 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.create-thread h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+}
+
+.create-thread form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.create-thread label {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.create-thread input[type="text"],
+.create-thread textarea,
+.create-thread select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-thread input[type="text"]:focus,
+.create-thread textarea:focus,
+.create-thread select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+.create-thread textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.create-thread button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 600;
+  justify-self: start;
+}
+
+.create-thread button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.create-thread button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label svg {
+  margin-right: 0.5rem;
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .create-thread {
+    padding: 1.5rem;
+  }
+
+  .create-thread h1 {
+    font-size: 1.75rem;
+  }
+}

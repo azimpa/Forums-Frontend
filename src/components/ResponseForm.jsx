@@ -1,4 +1,3 @@
-// src/components/ResponseForm.jsx
 import React, { useState } from 'react';
 import { useCreateResponseMutation } from '../features/api';
 import './ResponseForm.css';

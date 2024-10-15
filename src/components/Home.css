@@ -1,4 +1,4 @@
-.home {
+.page-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -8,6 +8,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.home {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home header {

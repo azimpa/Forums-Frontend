@@ -9,6 +9,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import './App.css';
 import Navigation from './components/Navigation';
+import ProtectedRoute from './ProtectedRoute';
 
 
 function MainApp() {
@@ -25,8 +26,8 @@ function MainApp() {
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<CategoryList />} />
         <Route path="/category/:id" element={<ThreadList />} />
-        <Route path="/thread/:id" element={<ThreadDetail />} />
-        <Route path="/create-thread" element={<CreateThread />} />
+        <Route path="/thread/:id" element={<ProtectedRoute><ThreadDetail /></ProtectedRoute>} />
+        <Route path="/create-thread" element={<ProtectedRoute><CreateThread /></ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
